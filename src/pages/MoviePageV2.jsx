@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import useSWR from "swr";
-import MovieCard, { MovieCardSkeleton } from "components/movie/MovieCard";
-import { fetcher, tmdbAPI } from "apiConfig/config";
-import useDebounce from "hooks/useDebounce";
+import MovieCard, { MovieCardSkeleton } from "../components/movie/MovieCard";
+import { fetcher, tmdbAPI } from "../apiConfig/config";
+import useDebounce from "../hooks/useDebounce";
 import ReactPaginate from "react-paginate";
 import { v4 } from "uuid";
-import Button from "components/button/Button";
+import Button from "../components/button/Button";
 import useSWRInfinite from "swr/infinite";
 const itemsPerPage = 20;
 
